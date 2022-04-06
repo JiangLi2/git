@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 告诉浏览器你的编码方式 -->
+    <meta charset="UTF-8">
+    <!-- 国内双核浏览器支持这种模式：用什么浏览器来渲染这个页面 
+    edge表示让浏览器用最新的内核去打开它，而不是ie的内核
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 在手机端还可以定义页面以多宽的尺寸渲染 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题 -->
+    <title>Document</title>
+    <!-- 页面图标
+        页面如果没在这配置页面图标，浏览器默认去网址第一个斜杆下面的favicon.ico
+    -->
+    <link rel="shortcut icon" href="https://v3.cn.vuejs.org/logo.png" type="image/x-icon">
+    <!-- 样式表 -->
+    <style></style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6 </li>
+    </ul>
+    <hgroup>
+        <h1>主标题</h1>
+        <h2>副标题</h2>
+    </hgroup>
+    <a target="foobar" href="https://www.jd.com">京东</a>
+    <a target="foobar" href="https://www.taobao.com">淘宝</a>
+    <h1>标题</h1>
+
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, delectus dolore? Similique nemo, dicta saepe
+        nisi vero quasi enim magnam quo neque, reprehenderit id. Atque laudantium nesciunt corporis nobis blanditiis.
+    </P>
+
+    <i>斜体</i>
+
+    <u>下划线</u>
+
+    <b>加粗</b>
+
+    <marquee>跑马灯</marquee>
+
+    <!-- 优先级1 -->
+    <input type="text" name="" id="" tabindex="1">
+
+    <!-- 优先级3 -->
+    <input type="text" name="" id="">
+
+    <!-- 优先级2 -->
+    <input type="text" name="" id="" tabindex="2">
+
+    <!-- 优先级4 -->
+    <input type="text" name="" id="">
+    <!-- 这里添加一个book对应isbn属性 -->
+    <div data-isbn="234534534">
+    </div>
+    <!-- 实体 -->
+    <div>
+        <!-- 十进制：我 -->
+        &#25105;
+        <!-- 十六进制 -->
+        &#x6211;
+        空格：
+        <!-- 不会被破坏的空格 -->
+        &nbsp;&#160;
+        <!-- '   '.split('').map(i=>i.charCodeAt(0))
+        (3) [32, 32, 32]
+        s=String.fromCharCode(32,160)
+        '  '
+        s.charCodeAt(0)
+        32
+        s.charCodeAt(1)
+        160 
+        浏览器显示的空格会帮你转成32号的空格，而控制台是代码他不会给你转-->
+        
+    </div>
+    <pre>
+                        有  借
+                    借  贷
+                必  必
+            有  相
+        贷  等
+    </pre>
+    <pre >
+        <code>
+            function add(a,b){
+                return a+b
+            }
+        </code>
+    </pre>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6 </li>
+    </ul>
+   <dl>
+       <dt>导演：</dt>
+       <dd>陈可辛</dd>
+       <dt>编剧：</dt>
+       <dd>张毅</dd>
+       <dd>吴刚</dd>
+       <dd>白浪</dd>
+   </dl> 
+   <form action="">
+       <!-- image/*媒体类型
+        text/*  
+        multiple可以选择多个文件:只会上传你的文件-->
+       <input type="file" multiple accept="image/*, .jpg, .png">
+       <input type="email" multiple name="" id="">
+       <input type="datetime-local" name="" id="">
+       <input type="date" name="" id="">
+       <input type="submit" value="click">
+       <input type="color" name="" id=" " value="#ffff00">
+   </form>
+</body>
+
+</html>
